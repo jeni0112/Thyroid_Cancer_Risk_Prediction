@@ -1,0 +1,2828 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='ThyroidCancerRiskAnalysis_17633840621820' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='thyroid_cancer_risk_data' inline='true' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='thyroid_cancer_risk_data' name='textscan.06iuh4s08txmkh1eyunrf0tck6q5'>
+            <connection class='textscan' directory='E:/AI Course/Week - 9 - ML and Data Science Capstone/3. Univariate and Bivariate' filename='thyroid_cancer_risk_data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.06iuh4s08txmkh1eyunrf0tck6q5' name='thyroid_cancer_risk_data.csv' table='[thyroid_cancer_risk_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Patient_ID' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='string' name='Country' ordinal='3' />
+            <column datatype='string' name='Ethnicity' ordinal='4' />
+            <column datatype='string' name='Family_History' ordinal='5' />
+            <column datatype='string' name='Radiation_Exposure' ordinal='6' />
+            <column datatype='string' name='Iodine_Deficiency' ordinal='7' />
+            <column datatype='string' name='Smoking' ordinal='8' />
+            <column datatype='string' name='Obesity' ordinal='9' />
+            <column datatype='string' name='Diabetes' ordinal='10' />
+            <column datatype='real' name='TSH_Level' ordinal='11' />
+            <column datatype='real' name='T3_Level' ordinal='12' />
+            <column datatype='real' name='T4_Level' ordinal='13' />
+            <column datatype='real' name='Nodule_Size' ordinal='14' />
+            <column datatype='string' name='Thyroid_Cancer_Risk' ordinal='15' />
+            <column datatype='string' name='Diagnosis' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Patient_ID]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Patient_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ethnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ethnicity]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Ethnicity</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Family_History</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Family_History]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Family_History</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Radiation_Exposure</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Radiation_Exposure]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Radiation_Exposure</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Iodine_Deficiency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Iodine_Deficiency]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Iodine_Deficiency</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Smoking</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Smoking]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Smoking</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Obesity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Obesity]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Obesity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diabetes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Diabetes]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Diabetes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TSH_Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TSH_Level]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>TSH_Level</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>T3_Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[T3_Level]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>T3_Level</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>T4_Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[T4_Level]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>T4_Level</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nodule_Size</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Nodule_Size]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Nodule_Size</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Thyroid_Cancer_Risk</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Thyroid_Cancer_Risk]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Thyroid_Cancer_Risk</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diagnosis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Diagnosis]</local-name>
+            <parent-name>[thyroid_cancer_risk_data.csv]</parent-name>
+            <remote-alias>Diagnosis</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Malignant Count' datatype='integer' name='[Calculation_920141706045808641]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Diagnosis] = &quot;Malignant&quot; THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Benign Count' datatype='integer' name='[Calculation_920141706045984770]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Diagnosis] = &quot;Benign&quot; THEN 1 ELSE 0 END' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+      <column caption='Family History' datatype='string' name='[Family_History]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column caption='Iodine Deficiency' datatype='string' name='[Iodine_Deficiency]' role='dimension' type='nominal' />
+      <column caption='Nodule Size' datatype='real' name='[Nodule_Size]' role='measure' type='quantitative' />
+      <column caption='Patient ID' datatype='integer' name='[Patient_ID]' role='dimension' type='ordinal' />
+      <column caption='Radiation Exposure' datatype='string' name='[Radiation_Exposure]' role='dimension' type='nominal' />
+      <column caption='T3 Level' datatype='real' name='[T3_Level]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='T4 Level' datatype='real' name='[T4_Level]' role='dimension' type='ordinal' />
+      <column caption='TSH Level' datatype='real' name='[TSH_Level]' role='measure' type='quantitative' />
+      <column caption='Thyroid Cancer Risk' datatype='string' name='[Thyroid_Cancer_Risk]' role='dimension' type='nominal' />
+      <column caption='thyroid_cancer_risk_data.csv' datatype='table' name='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[__tableau_internal_object_id__].[pcdf:cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Nodule_Size]' derivation='Avg' name='[avg:Nodule_Size:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[T3_Level]' derivation='Avg' name='[avg:T3_Level:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[T4_Level]' derivation='Avg' name='[avg:T4_Level:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TSH_Level]' derivation='Avg' name='[avg:TSH_Level:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Iodine_Deficiency]' derivation='None' name='[none:Iodine_Deficiency:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Thyroid_Cancer_Risk]' derivation='None' name='[none:Thyroid_Cancer_Risk:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Country,Diagnosis)' hidden='true' name='[Action (Country,Diagnosis)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+          <groupfilter function='level-members' level='[Diagnosis]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Diagnosis,Gender)' hidden='true' name='[Action (Diagnosis,Gender)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Diagnosis]' />
+          <groupfilter function='level-members' level='[Gender]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/ADMIN/AppData/Local/Temp/TableauTemp/#TableauTemp_1pk69th103wr0910flqc30icimu7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Patient_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Patient_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patient_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>212691</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>1</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>3</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ethnicity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ethnicity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ethnicity</remote-alias>
+              <ordinal>4</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Family_History</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Family_History]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Family_History</remote-alias>
+              <ordinal>5</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Radiation_Exposure</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Radiation_Exposure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Radiation_Exposure</remote-alias>
+              <ordinal>6</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Iodine_Deficiency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Iodine_Deficiency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Iodine_Deficiency</remote-alias>
+              <ordinal>7</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Smoking</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Smoking]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Smoking</remote-alias>
+              <ordinal>8</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Obesity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Obesity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Obesity</remote-alias>
+              <ordinal>9</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diabetes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Diabetes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diabetes</remote-alias>
+              <ordinal>10</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TSH_Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TSH_Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TSH_Level</remote-alias>
+              <ordinal>11</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5431</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>T3_Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[T3_Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>T3_Level</remote-alias>
+              <ordinal>12</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>638</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>T4_Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[T4_Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>T4_Level</remote-alias>
+              <ordinal>13</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3641</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nodule_Size</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Nodule_Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nodule_Size</remote-alias>
+              <ordinal>14</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1936</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Thyroid_Cancer_Risk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Thyroid_Cancer_Risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Thyroid_Cancer_Risk</remote-alias>
+              <ordinal>15</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diagnosis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Diagnosis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diagnosis</remote-alias>
+              <ordinal>16</ordinal>
+              <family>thyroid_cancer_risk_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Diagnosis:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Benign&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Malignant&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Thyroid_Cancer_Risk:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:Nodule_Size:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:T4_Level:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:T3_Level:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:TSH_Level:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[pcdf:cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[pcto:cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Iodine_Deficiency:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='thyroid_cancer_risk_data.csv' id='thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC'>
+            <properties context=''>
+              <relation connection='textscan.06iuh4s08txmkh1eyunrf0tck6q5' name='thyroid_cancer_risk_data.csv' table='[thyroid_cancer_risk_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Patient_ID' ordinal='0' />
+                  <column datatype='integer' name='Age' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='string' name='Country' ordinal='3' />
+                  <column datatype='string' name='Ethnicity' ordinal='4' />
+                  <column datatype='string' name='Family_History' ordinal='5' />
+                  <column datatype='string' name='Radiation_Exposure' ordinal='6' />
+                  <column datatype='string' name='Iodine_Deficiency' ordinal='7' />
+                  <column datatype='string' name='Smoking' ordinal='8' />
+                  <column datatype='string' name='Obesity' ordinal='9' />
+                  <column datatype='string' name='Diabetes' ordinal='10' />
+                  <column datatype='real' name='TSH_Level' ordinal='11' />
+                  <column datatype='real' name='T3_Level' ordinal='12' />
+                  <column datatype='real' name='T4_Level' ordinal='13' />
+                  <column datatype='real' name='Nodule_Size' ordinal='14' />
+                  <column datatype='string' name='Thyroid_Cancer_Risk' ordinal='15' />
+                  <column datatype='string' name='Diagnosis' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+      <datasources>
+        <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+      </datasources>
+      <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+        <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]'>
+        <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]'>
+        <groupfilter function='level-members' level='[none:Diagnosis:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]'>
+        <groupfilter function='level-members' level='[none:Gender:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Benign Vs Malignant</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' pivot='key' type='quantitative' />
+            <column caption='thyroid_cancer_risk_data.csv' datatype='table' name='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{3410CFC5-E37A-4394-B99B-54CB3CD39CA2}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Thyroid Cancer Risk vs TSH/T3/T4 Levels need to change</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='T3 Level' datatype='real' name='[T3_Level]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='T4 Level' datatype='real' name='[T4_Level]' role='dimension' type='ordinal' />
+            <column caption='TSH Level' datatype='real' name='[TSH_Level]' role='measure' type='quantitative' />
+            <column caption='Thyroid Cancer Risk' datatype='string' name='[Thyroid_Cancer_Risk]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' pivot='key' type='quantitative' />
+            <column caption='thyroid_cancer_risk_data.csv' datatype='table' name='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' role='measure' type='quantitative' />
+            <column-instance column='[T3_Level]' derivation='Avg' name='[avg:T3_Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[T4_Level]' derivation='Avg' name='[avg:T4_Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TSH_Level]' derivation='Avg' name='[avg:TSH_Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Thyroid_Cancer_Risk]' derivation='None' name='[none:Thyroid_Cancer_Risk:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:T3_Level:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:T4_Level:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:TSH_Level:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[:Measure Names]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[:Measure Names]' />
+              <text column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[Multiple Values]</rows>
+        <cols>([federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk] / [federated.07ym1nu0dhzhry135lvsz1smn8xh].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{65EBA844-3579-43D4-865A-C74EAC270024}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Iodine Deficiency Vs Nodule Size
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Iodine Deficiency' datatype='string' name='[Iodine_Deficiency]' role='dimension' type='nominal' />
+            <column caption='Nodule Size' datatype='real' name='[Nodule_Size]' role='measure' type='quantitative' />
+            <column caption='Thyroid Cancer Risk' datatype='string' name='[Thyroid_Cancer_Risk]' role='dimension' type='nominal' />
+            <column-instance column='[Nodule_Size]' derivation='Avg' name='[avg:Nodule_Size:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Iodine_Deficiency]' derivation='None' name='[none:Iodine_Deficiency:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Thyroid_Cancer_Risk]' derivation='None' name='[none:Thyroid_Cancer_Risk:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:Nodule_Size:qk]</rows>
+        <cols>([federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Iodine_Deficiency:nk] / [federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk])</cols>
+      </table>
+      <simple-id uuid='{05ED0DBD-7D22-4668-A2C6-EB2F0184987A}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Countrywise Diagnosis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column caption='Malignant Count' datatype='integer' name='[Calculation_920141706045808641]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Diagnosis] = &quot;Malignant&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Benign Count' datatype='integer' name='[Calculation_920141706045984770]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Diagnosis] = &quot;Benign&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Patient ID' datatype='integer' name='[Patient_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_920141706045808641]' derivation='Count' name='[cnt:Calculation_920141706045808641:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_920141706045984770]' derivation='Count' name='[cnt:Calculation_920141706045984770:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Patient_ID]' derivation='Count' name='[cnt:Patient_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' />
+              <size column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[cnt:Patient_ID:qk]' />
+              <lod column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]' />
+              <tooltip column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[cnt:Calculation_920141706045984770:qk]' />
+              <tooltip column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[cnt:Calculation_920141706045808641:qk]' />
+              <geometry column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Country:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Count of Patients:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.07ym1nu0dhzhry135lvsz1smn8xh].[cnt:Patient_ID:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Malignant cases: <[federated.07ym1nu0dhzhry135lvsz1smn8xh].[cnt:Calculation_920141706045808641:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Benign Count : <[federated.07ym1nu0dhzhry135lvsz1smn8xh].[cnt:Calculation_920141706045984770:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[Latitude (generated)]</rows>
+        <cols>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{C12357CC-37E0-45C8-8B24-B5AD03D971FE}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Diagnosis based on Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' pivot='key' type='quantitative' />
+            <column caption='thyroid_cancer_risk_data.csv' datatype='table' name='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' />
+              <wedge-size column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' />
+              <size column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' />
+              <text column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' />
+              <text column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{FF2B467E-F902-4A85-AC51-7FC65A15582F}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Countrywise Patients count</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' pivot='key' type='quantitative' />
+            <column caption='thyroid_cancer_risk_data.csv' datatype='table' name='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]</rows>
+        <cols>([federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk] / [federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk])</cols>
+      </table>
+      <simple-id uuid='{087288C2-24E4-42AB-84C9-3C7820F6D771}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Thyroid Cancer Risk' datatype='string' name='[Thyroid_Cancer_Risk]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' pivot='key' type='quantitative' />
+            <column caption='thyroid_cancer_risk_data.csv' datatype='table' name='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Thyroid_Cancer_Risk]' derivation='None' name='[none:Thyroid_Cancer_Risk:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk]' />
+              <text column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]</rows>
+        <cols>([federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk] / [federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk])</cols>
+      </table>
+      <simple-id uuid='{B0A92666-BBB6-43AF-82E4-CB8ACCC30FEC}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:Age:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:Age:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:Age:qk]</rows>
+        <cols>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</cols>
+      </table>
+      <simple-id uuid='{42399779-C1F2-4CC5-9601-8C887D87D0DB}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Iodine Deficiency vs nodule sizeSheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Iodine Deficiency' datatype='string' name='[Iodine_Deficiency]' role='dimension' type='nominal' />
+            <column caption='Thyroid Cancer Risk' datatype='string' name='[Thyroid_Cancer_Risk]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' pivot='key' type='quantitative' />
+            <column caption='thyroid_cancer_risk_data.csv' datatype='table' name='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Iodine_Deficiency]' derivation='None' name='[none:Iodine_Deficiency:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Thyroid_Cancer_Risk]' derivation='None' name='[none:Thyroid_Cancer_Risk:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Iodine_Deficiency:nk]' />
+              <text column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Iodine_Deficiency:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]</rows>
+        <cols>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk]</cols>
+      </table>
+      <simple-id uuid='{246F331B-6BF0-4CE2-AF28-4A21D4EBC611}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' pivot='key' type='quantitative' />
+            <column caption='thyroid_cancer_risk_data.csv' datatype='table' name='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' />
+              <wedge-size column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' />
+              <size column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{612BCB91-0010-4327-B8BF-EF3FDBCACF1F}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Gender Vs Diagnosis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diabetes]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' pivot='key' type='quantitative' />
+            <column caption='thyroid_cancer_risk_data.csv' datatype='table' name='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diabetes]' derivation='None' name='[none:Diabetes:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC]' derivation='Count' name='[pcto:cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Field' type='PctTotal'>
+                <order field='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' />
+                <order field='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' />
+              </table-calc>
+            </column-instance>
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' />
+              <text column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[pcto:cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk:1]</rows>
+        <cols>([federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk] / [federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk])</cols>
+      </table>
+      <simple-id uuid='{19353412-3377-455E-A04B-6C34F2DAA1A0}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Age Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]</column>
+            <column>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[avg:Age:qk]</rows>
+        <cols>[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]</cols>
+      </table>
+      <simple-id uuid='{EA2992FF-5ECD-4877-83F7-3E1E55EF1F99}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='22'>Thyroid Cancer Risk Analysis Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98028' id='24' param='vert' type-v2='layout-flow' w='99034' x='483' y='986'>
+            <zone h='6041' id='25' type-v2='title' w='99034' x='483' y='986'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91987' id='10' param='horz' type-v2='layout-flow' w='99034' x='483' y='7027'>
+              <zone h='91987' id='8' type-v2='layout-basic' w='89378' x='483' y='7027'>
+                <zone h='45992' id='5' name='Sheet 1' w='22345' x='45172' y='7027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45992' id='7' name='Sheet 2' w='16759' x='483' y='7027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45992' id='16' name='Sheet 6' w='27930' x='17242' y='7027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45995' id='19' name='Sheet 3' w='44689' x='45172' y='53019'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45995' id='20' name='Sheet 4' w='44689' x='483' y='53019'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45992' id='22' name='Sheet 5' w='22344' x='67517' y='7027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='91987' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='7027'>
+                <zone h='8877' id='11' name='Sheet 2' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type-v2='color' w='9656' x='89861' y='7027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='16646' id='12' name='Sheet 2' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' type-v2='size' w='9656' x='89861' y='15904'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8877' id='17' name='Sheet 6' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Iodine_Deficiency:nk]' type-v2='color' w='9656' x='89861' y='32550'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6905' id='18' name='Sheet 6' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Iodine_Deficiency:nk]' type-v2='highlighter' w='9656' x='89861' y='41427'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='11467' id='21' name='Sheet 4' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk]' type-v2='color' w='9656' x='89861' y='48332'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#000000' fontname='Times New Roman' fontsize='22'>Thyroid Cancer Risk Analysis Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2150' minheight='2150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98028' id='32' param='vert' type-v2='layout-flow' w='99034' x='483' y='986'>
+                <zone h='6041' id='25' type-v2='title' w='99034' x='483' y='986'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45992' id='7' is-fixed='true' name='Sheet 2' w='16759' x='483' y='7027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8877' id='11' name='Sheet 2' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type-v2='color' w='9656' x='89861' y='7027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16646' id='12' name='Sheet 2' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' type-v2='size' w='9656' x='89861' y='15904'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6905' id='18' name='Sheet 6' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Iodine_Deficiency:nk]' type-v2='highlighter' w='9656' x='89861' y='41427'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45992' id='16' is-fixed='true' name='Sheet 6' w='27930' x='17242' y='7027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8877' id='17' name='Sheet 6' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Iodine_Deficiency:nk]' type-v2='color' w='9656' x='89861' y='32550'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45992' id='5' is-fixed='true' name='Sheet 1' w='22345' x='45172' y='7027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45992' id='22' is-fixed='true' name='Sheet 5' w='22344' x='67517' y='7027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45995' id='20' is-fixed='true' name='Sheet 4' w='44689' x='483' y='53019'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11467' id='21' name='Sheet 4' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk]' type-v2='color' w='9656' x='89861' y='48332'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45995' id='19' is-fixed='true' name='Sheet 3' w='44689' x='45172' y='53019'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4A6A73F0-A8FE-4B3A-83B0-4B8B95833C83}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98028' id='9' param='vert' type-v2='layout-flow' w='99034' x='483' y='986' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E28A57AA-94EB-485A-BC91-012F96E495CD}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='24'>Thyroid Cancer Risk &amp; Diagnosis Overview</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98028' id='20' param='vert' type-v2='layout-flow' w='99034' x='483' y='986'>
+            <zone fixed-size='104' h='13810' id='21' is-fixed='true' type-v2='title' w='99034' x='483' y='986'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='84218' id='7' param='horz' type-v2='layout-flow' w='99034' x='483' y='14796'>
+              <zone h='84218' id='5' type-v2='layout-basic' w='89378' x='483' y='14796'>
+                <zone h='40075' id='9' name='Sheet 9' w='22344' x='483' y='14796'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='40075' id='17' name='Sheet 8' w='33517' x='22827' y='14796'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='44143' id='23' param='horz' type-v2='layout-flow' w='89378' x='483' y='54871'>
+                  <zone fixed-size='618' h='44143' id='30' is-fixed='true' param='horz' type-v2='layout-flow' w='37296' x='483' y='54871'>
+                    <zone h='44143' id='31' name='Sheet 11' w='37296' x='483' y='54871'>
+                      <layout-cache cell-count-w='6' minheight='216' non-cell-size-w='65' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='44143' id='24' name='Sheet 10' w='52077' x='37779' y='54871'>
+                    <layout-cache cell-count-w='9' minheight='228' non-cell-size-w='60' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='40075' id='26' param='horz' type-v2='layout-flow' w='33517' x='56344' y='14796'>
+                  <zone h='40075' id='27' name='Sheet 12' w='33517' x='56344' y='14796'>
+                    <layout-cache minwidth='202' type-h='fixed' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='84218' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='14796'>
+                <zone fixed-size='285' h='35142' id='33' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='14796'>
+                  <zone forceUpdate='true' h='5302' id='34' type-v2='text' w='9656' x='89861' y='14796'>
+                    <formatted-text>
+                      <run bold='true' fontalignment='1' fontsize='15'>Filters</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='8877' id='18' name='Sheet 8' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' type-v2='color' w='9656' x='89861' y='49938'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='11467' id='25' name='Sheet 10' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[:Measure Names]' type-v2='color' w='9656' x='89861' y='58815'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='11467' id='32' name='Sheet 11' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk]' type-v2='color' w='9656' x='89861' y='70282'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='24'>Thyroid Cancer Risk &amp; Diagnosis Overview</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98028' id='41' param='vert' type-v2='layout-flow' w='99034' x='483' y='986'>
+                <zone fixed-size='104' h='13810' id='21' type-v2='title' w='99034' x='483' y='986'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40075' id='9' is-fixed='true' name='Sheet 9' w='22344' x='483' y='14796'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40075' id='17' is-fixed='true' name='Sheet 8' w='33517' x='22827' y='14796'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8877' id='18' name='Sheet 8' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' type-v2='color' w='9656' x='89861' y='49938'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40075' id='27' is-fixed='true' name='Sheet 12' w='33517' x='56344' y='14796'>
+                  <layout-cache minwidth='202' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5302' id='34' type-v2='text' w='9656' x='89861' y='14796'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='15'>Filters</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44143' id='31' is-fixed='true' name='Sheet 11' w='37296' x='483' y='54871'>
+                  <layout-cache cell-count-w='5' minheight='216' non-cell-size-w='65' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11467' id='32' name='Sheet 11' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk]' type-v2='color' w='9656' x='89861' y='70282'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44143' id='24' is-fixed='true' name='Sheet 10' w='52077' x='37779' y='54871'>
+                  <layout-cache cell-count-w='9' minheight='228' non-cell-size-w='60' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11467' id='25' name='Sheet 10' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[:Measure Names]' type-v2='color' w='9656' x='89861' y='58815'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{39370CF5-D519-4348-A4D9-B2EB11929ED0}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='24'>Thyroid Cancer Risk &amp; Diagnosis Overview</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+      </datasources>
+      <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+        <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98028' id='49' param='vert' type-v2='layout-flow' w='87447' x='483' y='986'>
+            <zone fixed-size='92' h='12330' id='50' is-fixed='true' type-v2='title' w='87447' x='483' y='986'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='85698' id='47' type-v2='layout-basic' w='87447' x='483' y='13316'>
+              <zone h='47227' id='28' param='horz' type-v2='layout-flow' w='87447' x='483' y='13316'>
+                <zone h='47227' id='23' param='vert' type-v2='layout-flow' w='87447' x='483' y='13316'>
+                  <zone h='47227' id='25' param='horz' type-v2='layout-flow' w='87447' x='483' y='13316'>
+                    <zone fixed-size='536' h='47227' id='26' is-fixed='true' name='Sheet 8' w='32831' x='483' y='13316'>
+                      <layout-cache minheight='216' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='47227' id='52' is-fixed='true' type-v2='layout-basic' w='54616' x='33314' y='13316'>
+                      <zone h='47227' id='33' param='horz' type-v2='layout-flow' w='17682' x='33314' y='13316'>
+                        <zone fixed-size='385' h='47227' id='34' is-fixed='true' name='Sheet 9' w='17682' x='33314' y='13316'>
+                          <layout-cache minheight='195' type-h='scalable' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                      <zone h='47227' id='53' param='horz' type-v2='layout-flow' w='36934' x='50996' y='13316'>
+                        <zone h='47227' id='37' param='horz' type-v2='layout-flow' w='36934' x='50996' y='13316'>
+                          <zone h='47227' id='38' name='Sheet 11' w='36934' x='50996' y='13316'>
+                            <layout-cache cell-count-w='6' minheight='216' non-cell-size-w='65' type-h='scalable' type-w='cell' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='38471' id='40' param='horz' type-v2='layout-flow' w='87447' x='483' y='60543'>
+                <zone fixed-size='812' h='38471' id='41' is-fixed='true' name='Sheet 10' w='49487' x='483' y='60543'>
+                  <layout-cache minheight='228' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='38471' id='43' param='vert' type-v2='layout-flow' w='37960' x='49970' y='60543'>
+                  <zone h='38471' id='44' name='Sheet 12' w='37960' x='49970' y='60543'>
+                    <layout-cache minheight='251' minwidth='202' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='98028' id='51' param='vert' type-v2='layout-flow' w='11587' x='87930' y='986'>
+            <zone h='4932' id='54' type-v2='text' w='11587' x='87930' y='986'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='14'>Filters</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='12947' id='29' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' type-v2='filter' w='10139' x='88956' y='18989' />
+        <zone fixed-size='112' h='35882' id='31' is-fixed='true' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]' type-v2='filter' w='10260' x='89077' y='31196'>
+          <zone-style>
+            <format attr='border-color' value='#72b966' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#f0f1e8' />
+          </zone-style>
+        </zone>
+        <zone h='12947' id='35' name='Sheet 9' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type-v2='filter' w='10139' x='89197' y='6412' />
+        <zone h='7891' id='36' name='Sheet 9' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type-v2='color' w='8449' x='89016' y='67941' />
+        <zone h='10481' id='39' name='Sheet 11' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk]' type-v2='color' w='8449' x='89137' y='76202' />
+        <zone fixed-size='72' h='10481' id='42' is-fixed='true' name='Sheet 10' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[:Measure Names]' type-v2='color' w='8449' x='89318' y='87300' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='24'>Thyroid Cancer Risk &amp; Diagnosis Overview</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2000' minheight='2000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='62' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98028' id='61' param='vert' type-v2='layout-flow' w='99034' x='483' y='986'>
+                <zone fixed-size='92' h='12330' id='50' type-v2='title' w='87447' x='483' y='986'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4932' id='54' type-v2='text' w='11587' x='87930' y='986'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='14'>Filters</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12947' id='29' mode='checkdropdown' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' type-v2='filter' w='10139' x='88956' y='18989'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='112' h='35882' id='31' mode='checkdropdown' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]' type-v2='filter' w='10260' x='89077' y='31196'>
+                  <zone-style>
+                    <format attr='border-color' value='#72b966' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f0f1e8' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47227' id='26' is-fixed='true' name='Sheet 8' w='32831' x='483' y='13316'>
+                  <layout-cache minheight='216' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12947' id='35' mode='checkdropdown' name='Sheet 9' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type-v2='filter' w='10139' x='89197' y='6412'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47227' id='34' is-fixed='true' name='Sheet 9' w='17682' x='33314' y='13316'>
+                  <layout-cache minheight='195' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7891' id='36' name='Sheet 9' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type-v2='color' w='8449' x='89016' y='67941'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47227' id='38' is-fixed='true' name='Sheet 11' w='36934' x='50996' y='13316'>
+                  <layout-cache cell-count-w='6' minheight='216' non-cell-size-w='65' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10481' id='39' name='Sheet 11' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk]' type-v2='color' w='8449' x='89137' y='76202'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38471' id='41' is-fixed='true' name='Sheet 10' w='49487' x='483' y='60543'>
+                  <layout-cache minheight='228' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='72' h='10481' id='42' name='Sheet 10' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[:Measure Names]' type-v2='color' w='8449' x='89318' y='87300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38471' id='44' is-fixed='true' name='Sheet 12' w='37960' x='49970' y='60543'>
+                  <layout-cache minheight='251' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A033FE8B-E89A-41B4-92D2-5D2BC0B53841}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 5'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='thyroid_cancer_risk_data' name='federated.07ym1nu0dhzhry135lvsz1smn8xh' />
+      </datasources>
+      <datasource-dependencies datasource='federated.07ym1nu0dhzhry135lvsz1smn8xh'>
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column datatype='string' name='[Diabetes]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Diagnosis]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+        <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Diabetes]' derivation='None' name='[none:Diabetes:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Diagnosis]' derivation='None' name='[none:Diagnosis:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98028' id='7' param='horz' type-v2='layout-flow' w='99034' x='483' y='986'>
+            <zone h='98028' id='5' type-v2='layout-basic' w='89378' x='483' y='986'>
+              <zone h='98028' id='3' name='Sheet 8' w='89378' x='483' y='986'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98028' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='986'>
+              <zone h='12947' id='8' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' type-v2='filter' w='9656' x='89861' y='986'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12947' id='9' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type-v2='filter' w='9656' x='89861' y='13933'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12947' id='10' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diabetes:nk]' type-v2='filter' w='9656' x='89861' y='26880'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='35635' id='11' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]' type-v2='filter' w='9656' x='89861' y='39827'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8877' id='12' name='Sheet 8' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' type-v2='color' w='9656' x='89861' y='75462'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98028' id='19' param='vert' type-v2='layout-flow' w='99034' x='483' y='986'>
+                <zone h='12947' id='8' mode='checkdropdown' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' type-v2='filter' w='9656' x='89861' y='986'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12947' id='9' mode='checkdropdown' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type-v2='filter' w='9656' x='89861' y='13933'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12947' id='10' mode='checkdropdown' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diabetes:nk]' type-v2='filter' w='9656' x='89861' y='26880'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='35635' id='11' mode='checkdropdown' name='Sheet 8' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]' type-v2='filter' w='9656' x='89861' y='39827'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98028' id='3' is-fixed='true' name='Sheet 8' w='89378' x='483' y='986'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8877' id='12' name='Sheet 8' pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' type-v2='color' w='9656' x='89861' y='75462'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{999C21E4-729E-424D-8E3F-F643D77E91DC}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C7FFC0E3-609E-4280-AB19-5673B35D9E9B}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8092165C-6A74-406E-B1B5-2FEBA874CE13}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F599E2A1-1C39-41C7-A166-8D2A2EFDC4FE}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Iodine_Deficiency:nk]' type='color' />
+            <card param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Iodine_Deficiency:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D6EB6D50-9A9B-4A7B-B9E0-6A40AE5A9ED8}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='25' />
+      <simple-id uuid='{6FA05906-1495-49A8-9E10-954F83E3AF93}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[__tableau_internal_object_id__].[cnt:thyroid_cancer_risk_data.csv_4F770AF1F8994E99AF95DAF7E82FB2DC:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{969AB48E-04B1-4FAA-9A4D-CC01F4F6D566}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{EF5A989D-D44F-4A56-A499-580252D25F31}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' type='filter' />
+            <card param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type='filter' />
+            <card param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F2C0B06F-D5D9-4B9F-8024-F76DCA4C4677}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D14B21DF-B281-4F40-B42B-160B5441DEA3}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D06057C0-9817-46C9-AEF8-E06EF8333D5D}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Thyroid_Cancer_Risk:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{17177C41-7B8D-41C5-A218-DED9CE4D528B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Country:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[cnt:Patient_ID:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.07ym1nu0dhzhry135lvsz1smn8xh].[none:Diagnosis:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0B28EB29-B249-459F-A37A-D929C4FF64BA}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Sheet 10'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 11'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 12'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 8'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 9'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='21' />
+      <simple-id uuid='{3F7F8179-ABB6-4B29-BC82-5206CDD8A487}' />
+    </window>
+    <window class='dashboard' name='Dashboard 4'>
+      <viewpoints>
+        <viewpoint name='Sheet 10'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 11'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 12'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 8'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 9'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{06302E0C-C67C-4D81-B77F-66D0F8E5C857}' />
+    </window>
+    <window class='dashboard' name='Dashboard 5'>
+      <viewpoints>
+        <viewpoint name='Sheet 8'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{784944D7-00EA-4A28-8025-CDBB968D49F0}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AE748396-91A7-46E9-BE33-12DB4CCA2134}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BA1FF6BF-A822-4F03-A35C-7FC938006D24}' />
+    </window>
+  </windows>
+</workbook>
